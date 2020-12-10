@@ -14,14 +14,18 @@
  *= require_self
  */
 
-/*　全てに共通*/
+/* 共通 */
 * {
   box-sizing: border-box;
   pading: 0;
   margin: 0;
+  font-size: 14px;
 }
 .wrapper {
   padding: 30px;
+}
+.link {
+  display : inline;
 }
 .link:hover {
   background-color: black;
@@ -42,9 +46,6 @@
 }
 
 /* index */
-table {
-  font-size: 14px;
-}
 th {
   padding: 3px;
 }
@@ -55,16 +56,27 @@ td {
 .new-heading {
   padding: 20px 0 10px;
 }
-.new-title {
-  font-size: 14px;
-}
 .new-body {
   padding-top: 14px;
-  font-size: 14px;  
 }
 input[type="submit"] {
   margin-top: 14px;
   display: block;
 }
+
 /* show */
+
+.btn {
+  display: flex;
+}
+.between {
+  padding: 0 10px;
+}
+.show-table {
+  display: flex;
+  padding: 0 30px 30px;
+}
+.show-table p {
+  padding-right: 10px;
+}
 /* edit */

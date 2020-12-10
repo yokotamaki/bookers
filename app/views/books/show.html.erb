@@ -1,7 +1,16 @@
-<p>Title:</p><%= @book.title %>
-<p>Body:</p><%= @book.body %>
-<div>
-  <%= link_to "Edit", edit_book_path(@book) %>
-  <p>|</p>
-  <%= link_to "Back", books_path %>
+<div class="wrapper">
+  <div class="show-table">
+    <p><b>Title:</b></p>
+    <%= @book.title %>
+  </div>  
+  <div class="show-table">
+    <p><b>Body:</b></p>
+    <%= @book.body %>
+  </div>  
+  
+  <div class="btn">
+    <p class="link"><%= link_to "Edit", edit_book_path(@book) %></p>
+    <p class="between">|</p>
+    <p class="link"><%= link_to "Back", books_path %></p>
+  </div>
 </div>
