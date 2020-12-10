@@ -14,7 +14,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book.id), notice: "Book was successfully created."
     else
       @books = Book.all
-      render action: :index 
+      render action: :index
     end  
   end  
 
@@ -31,7 +31,7 @@ class BooksController < ApplicationController
     if @book.update(book_params)
       redirect_to book_path(@book.id), notice: "Book was successfully updated."
     else
-      render action: :index
+      render action: :edit
     end  
   end  
   

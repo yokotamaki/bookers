@@ -35,6 +35,9 @@
 .link {
   display : inline;
 }
+a {
+  color: black;
+}
 a:hover {
   background-color: black;
   color: white;
