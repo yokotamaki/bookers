@@ -18,6 +18,12 @@
   
   <h4 class="new-heading">New book</h4>
   <%= form_with model:@book, local:true do |f| %>
+    <% if @book.errors.any? %>
+      <%= @book.errors.count %>error 
+      <% @book.errors.full_messages.each do |message| %>
+        <%= message %>
+      <% end %>
+    <% end %>
     <p>Title</p>
     <%= f.text_field :title %>
     <p class="form-body">Body</p>
