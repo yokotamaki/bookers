@@ -80,6 +80,10 @@ td {
 }
 
 /* show */
+.msg {
+  color: green;
+  padding: 0 30px 30px;
+}
 .show-table {
   display: flex;
   padding: 0 30px 30px;
