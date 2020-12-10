@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <h2 class="index-heading">Books</h2>
+  <h1 class="heading">Books</h1>
   <table>
     <tr>
       <th>Title</th>
@@ -16,15 +16,12 @@
     <% end %>
   </table>
   
-  <div>
-    <h4 class="new-heading">New book</h4>
-    <%= form_with model:@book, local:true do |f| %>
-      <p>Title</p>
-      <%= f.text_field :title %>
-      <p class="new-body">Body</p>
-      <%= f.text_area :body %>
-      
-      <%= f.submit "Create Book" %>
-    <% end %>    
-  </div>
+  <h4 class="new-heading">New book</h4>
+  <%= form_with model:@book, local:true do |f| %>
+    <p>Title</p>
+    <%= f.text_field :title %>
+    <p class="form-body">Body</p>
+    <%= f.text_area :body %>
+    <%= f.submit "Create Book" %>
+  <% end %>    
 </div>

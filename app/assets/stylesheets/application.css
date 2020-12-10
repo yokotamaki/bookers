@@ -24,25 +24,46 @@
 .wrapper {
   padding: 30px;
 }
+
+/* 見出し */
+.heading {
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+/* リンクボタン */
 .link {
   display : inline;
 }
-.link:hover {
+a:hover {
   background-color: black;
   color: white;
 }
 
 /* top */
-.top-heading {
-  padding-bottom: 30px;
-}
 .top-wrapper {
-  padding: 0 50px;
+  padding: 0 30px;
 }
 .top-text {
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 3;
+}
+
+ /* 入力フォーム関連 */
+ input[type="submit"] {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  display: block;
+}
+.form-body {
+  padding-top: 15px;
+}
+.btn {
+  display: flex;
+}
+.between {
+  padding: 0 10px;
 }
 
 /* index */
@@ -55,23 +76,10 @@ td {
 }
 .new-heading {
   padding: 20px 0 10px;
-}
-.new-body {
-  padding-top: 14px;
-}
-input[type="submit"] {
-  margin-top: 14px;
-  display: block;
+  font-size: 20px;
 }
 
 /* show */
-
-.btn {
-  display: flex;
-}
-.between {
-  padding: 0 10px;
-}
 .show-table {
   display: flex;
   padding: 0 30px 30px;
@@ -79,4 +87,5 @@ input[type="submit"] {
 .show-table p {
   padding-right: 10px;
 }
-/* edit */
+
+
