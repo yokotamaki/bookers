@@ -16,13 +16,17 @@
     <% end %>
   </table>
   
-  <h4 class="new-heading">New book</h4>
+  <h3 class="new-heading">New book</h4>
   <%= form_with model:@book, local:true do |f| %>
     <% if @book.errors.any? %>
-      <%= @book.errors.count %>error 
-      <% @book.errors.full_messages.each do |message| %>
-        <%= message %>
-      <% end %>
+      <div class="error-wrapper">
+        <h4 class="errors"><%= @book.errors.count %>error</h4> 
+        <ul>
+          <% @book.errors.full_messages.each do |message| %>
+          <li class="error"><%= message %></li>
+          <% end %>
+        </ul>  
+      </div>  
     <% end %>
     <p>Title</p>
     <%= f.text_field :title %>

@@ -78,6 +78,19 @@ td {
   padding: 20px 0 10px;
   font-size: 20px;
 }
+.error-wrapper {
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+.errors {
+  background-color: #bb171a;
+  color: white;
+  padding: 3px 10px;
+}
+ul {
+  background-color: #eaeaea;
+  padding: 30px;
+}
 
 /* show */
 .msg {
