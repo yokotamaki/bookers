@@ -13,3 +13,58 @@
  *= require_tree .
  *= require_self
  */
+
+/*　全てに共通*/
+* {
+  box-sizing: border-box;
+  pading: 0;
+  margin: 0;
+}
+.wrapper {
+  padding: 30px;
+}
+.link:hover {
+  background-color: black;
+  color: white;
+}
+
+/* top */
+.top-heading {
+  padding-bottom: 30px;
+}
+.top-wrapper {
+  padding: 0 50px;
+}
+.top-text {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 3;
+}
+
+/* index */
+table {
+  font-size: 14px;
+}
+th {
+  padding: 3px;
+}
+td {
+  padding: 2px 10px;
+  color: #626262;
+}
+.new-heading {
+  padding: 20px 0 10px;
+}
+.new-title {
+  font-size: 14px;
+}
+.new-body {
+  padding-top: 14px;
+  font-size: 14px;  
+}
+input[type="submit"] {
+  margin-top: 14px;
+  display: block;
+}
+/* show */
+/* edit */
